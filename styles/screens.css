@@ -1,15 +1,54 @@
-@media screen and (min-width: 48rem) {
-  .fa-bars {
-    display: none;
-  }
+:root {
+  --color-bg-main: #323232;
+  --color-border: #4d4d4d;
+  --color-shadow: rgba(0, 0, 0, 0.6);
+}
 
-  section:nth-child(1) {
-    display: block;
+@media screen and (min-width: 48rem) {
+  main {
+    margin: 0 auto;
+    max-width: 64rem;
+    width: 95vw;
+    background-color: var(--color-bg-main);
+    border-radius: 1rem;
+    box-shadow: 0.5rem 0.5rem 1rem var(--color-shadow);
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
   }
 
   section:nth-child(1),
   section:nth-child(2) {
-    border: 1px solid white;
-    max-width: 640px;
+    padding: 1.5rem;
+    height: 100%;
+    flex-basis: 50%;
+  }
+
+  .authentication-information > label {
+    background-color: var(--color-bg-main);
+  }
+
+  section:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    border-right: 0.125rem solid var(--color-border);
+  }
+
+  section:nth-child(2) h2 {
+    letter-spacing: 0.125rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-shadow: 0.125rem 0.125rem 0.25rem var(--color-shadow);
+  }
+
+  section:nth-child(2) h2 span {
+    margin-top: 1.5rem;
+    display: block;
+  }
+
+  section:nth-child(2) img {
+    width: 100%;
   }
 }

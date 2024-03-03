@@ -1,11 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" media="all" />
+    <link rel="stylesheet" href="styles/screens.css" media="screen" />
+    <link rel="stylesheet" href="styles/print.css" media="print" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Tela de Login</title>
+  </head>
+  <body>
+    <header>
+      <h1>Logo</h1>
+      <a href="index.html">Registrar</a>
+    </header>
+
+    <main>
+      <section>
+        <h2>Bem-vindo novamente!</h2>
+
+        <form action="authentication.php" method="post" autocomplete="on">
+          <div class="authentication-information">
+            <label for="username">Nome de usuário</label>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              spellcheck="false"
+              minlength="8"
+              maxlength="30"
+              required
+            />
+          </div>
+          <div class="authentication-information">
+            <label for="email">E-mail</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              spellcheck="false"
+              minlength="8"
+              maxlength="30"
+              required
+            />
+          </div>
+          <div class="authentication-information">
+            <label for="password">Senha</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              minlength="8"
+              maxlength="30"
+              required
+            />
+          </div>
+
+          <div>
+            <input type="submit" id="submit" value="Entrar" />
+          </div>
+          <div id="choice-box">
+            <div>
+              <input
+                type="checkbox"
+                name="to-keep-nav"
+                class="checkbox"
+                id="to-keep-nav"
+              />
+              <label for="to-keep-nav"
+                ><span></span>Manter conectado neste navegador.</label
+              >
+            </div>
+          </div>
+        </form>
+
+        <div class="help-options">
+          <p>
+            <a href="#">Esqueceu a senha?</a>
+          </p>
+          <p>
+            <a href="index.html">Não possui uma conta?</a>
+          </p>
+        </div>
+
+        <div id="connection-options">
+          <div>
+            <hr />
+            <p>Conecte atráves</p>
+            <hr />
+          </div>
+          <div>
+            <div>
+              <a href="#">
+                <i class="fa-brands fa-google"></i>
+                Conectar atráves do Google
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <i class="fa-brands fa-facebook"></i>
+                Conectar atráves do Facebook
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <i class="fa-brands fa-twitter"></i>
+                Conectar atráves do Twitter
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2>
+          Conecte com as pessoas e compartilhe o que você tem em mente.
+          <span> Faça parte da comunidade. </span>
+        </h2>
+
+        <div>
+          <img src="img/undraw_team_up_re_84ok.svg" alt="Team up" />
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
